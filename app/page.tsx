@@ -15,14 +15,11 @@ export default function HomePage() {
   return (
     <>
       <section className="grain-overlay relative flex min-h-[88vh] items-center border-b border-slatecool/15">
-        <motion.div
-          initial={{ y: 0 }}
-          animate={{ y: -14 }}
-          transition={{ duration: 8, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-          className="absolute inset-0"
-        >
-          <Image src="/images/hero-shop.jpg" alt="Premium barbershop interior" fill priority className="object-cover opacity-45" />
-        </motion.div>
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-45 md:bg-fixed"
+          style={{ backgroundImage: "url('/images/70a2195dc1922b736df5703715e59b77a1bfb336722b8870dccc1ac16d5b991f.jpeg')" }}
+          aria-hidden="true"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-obsidian/80 to-obsidian" />
 
         <div className="relative mx-auto w-full max-w-6xl px-4 md:px-6">
@@ -77,13 +74,13 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <div className="mb-8 flex items-end justify-between">
-          <div>
+        <div className="mb-8 text-center">
+          <div className="mx-auto">
             <p className="text-xs uppercase tracking-[0.2em] text-bronze">Services Preview</p>
             <h2 className="mt-2 font-heading text-5xl uppercase">Built for modern gentlemen</h2>
           </div>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4">
           {[
             {
               title: "Cuts",
@@ -101,10 +98,16 @@ export default function HomePage() {
               icon: "Full"
             }
           ].map((card) => (
-            <article key={card.title} className="rounded-2xl border border-slatecool/20 bg-charcoal/35 p-6">
-              <p className="text-2xl text-bronze">{card.icon}</p>
-              <h3 className="mt-3 font-heading text-3xl uppercase">{card.title}</h3>
-              <p className="mt-2 text-sm text-slatecool">{card.body}</p>
+            <article key={card.title} className="w-full rounded-xl border border-slatecool/20 bg-charcoal/35 p-6 md:p-8">
+              <div className="flex items-start gap-4">
+                <p className="rounded-md border border-bronze/40 bg-bronze/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] text-bronze">
+                  {card.icon}
+                </p>
+                <div>
+                  <h3 className="font-heading text-3xl uppercase">{card.title}</h3>
+                  <p className="mt-2 text-sm text-slatecool">{card.body}</p>
+                </div>
+              </div>
               <Link href="/services" className="mt-5 inline-block text-xs uppercase tracking-[0.12em] text-white hover:text-bronze">
                 View Services
               </Link>

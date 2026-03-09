@@ -5,14 +5,14 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const galleryImages = [
-  "/images/gallery-1.jpg",
-  "/images/gallery-2.jpg",
-  "/images/gallery-3.jpg",
-  "/images/gallery-4.jpg",
-  "/images/gallery-5.jpg",
-  "/images/gallery-6.jpg",
-  "/images/gallery-7.jpg",
-  "/images/gallery-8.jpg"
+  "/images/522eb12956caade759d8c3266157b938c4ca7f5755f007380a5a7b4f5fd3ed7c.jpeg",
+  "/images/70a2195dc1922b736df5703715e59b77a1bfb336722b8870dccc1ac16d5b991f.jpeg",
+  "/images/8c31d0dcd6d964d797c9bbe5a7757b0227eb34af766b94c15562b377ed453742.jpeg",
+  "/images/a5c1d42c470d2f25067d816112ca8b309725e826ecf6e76d54e72d3e5814845f.jpeg",
+  "/images/c4d5f441fbed77f0d0b2a06aa88590c3ca27b3fca9a2709c98a08a2b18937949.jpeg",
+  "/images/d82c078cd947201b49f1d370a450655e439b9a7d8b86680568dbcb95f868e16e.jpeg",
+  "/images/e6c58ae945f7e521c444ddea224d429c7d32f1ed51161b80e6d21b6e4ccfbeee.jpeg",
+  "/images/1b42e6b43f0417363523ae9fc6d0b54638c0ca1ebb62fa64b2bfbd5d7dc032e3.png"
 ];
 
 type GalleryGridProps = {

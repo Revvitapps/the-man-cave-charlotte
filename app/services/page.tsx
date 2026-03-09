@@ -36,7 +36,7 @@ export default function ServicesPage() {
       <div className="sticky bottom-0 z-30 border-t border-slatecool/20 bg-obsidian/95 p-3 md:hidden">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3">
           <p className="text-xs uppercase tracking-[0.1em] text-slatecool">Ready to book?</p>
-          <CTAButton href="/contact" className="px-4 py-2 text-xs">
+          <CTAButton href={BUSINESS.externalLinks.booksy} className="px-4 py-2 text-xs">
             Book Now
           </CTAButton>
         </div>
@@ -47,7 +47,7 @@ export default function ServicesPage() {
           <h2 className="font-heading text-4xl uppercase">Need pricing clarity?</h2>
           <p className="mt-2 text-sm text-slatecool">Call for pricing and same-day availability.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <CTAButton href="/contact">Book Your Chair</CTAButton>
+            <CTAButton href={BUSINESS.externalLinks.booksy}>Book Your Chair</CTAButton>
             <CTAButton href={BUSINESS.phoneHref} variant="secondary">
               Call Now
             </CTAButton>

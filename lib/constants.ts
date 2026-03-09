@@ -29,6 +29,13 @@ export const BUSINESS = {
   mapEmbed:
     "https://www.google.com/maps?q=926+Westmere+Ave,+Charlotte,+NC+28208&output=embed",
   mapsLink: "https://maps.google.com/?q=926+Westmere+Ave,+Charlotte,+NC+28208",
+  externalLinks: {
+    yelp: "https://share.google/BZbRjb1SOoNPN81Tg",
+    booksy:
+      "https://booksy.com/en-us/546919_the-man-cave-barbershop-charlotte-llc_barber-shop_26844_charlotte#ba_s=seo",
+    googleReviews:
+      "https://www.google.com/maps/place/The+Man+Cave+Barbershop+Charlotte+LLC/data=!4m2!3m1!1s0x0:0x32929227a5b3cd9a?sa=X&ved=1t:2428&ictx=111"
+  },
   siteUrl: "https://www.themancavecharlotte.com",
   keywords: [
     "barber shop Charlotte NC",

@@ -9,14 +9,29 @@ export default function Footer() {
           <h2 className="font-heading text-2xl uppercase tracking-[0.12em]">The Man Cave</h2>
           <p className="mt-4 text-sm text-slatecool">Premium grooming for Charlotte gentlemen.</p>
           <div className="mt-5 flex gap-3">
-            <a className="rounded-full border border-slatecool/25 px-3 py-1 text-xs uppercase tracking-[0.1em]" href="#">
-              IG
+            <a
+              className="rounded-full border border-slatecool/25 px-3 py-1 text-xs uppercase tracking-[0.1em]"
+              href={BUSINESS.externalLinks.yelp}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Yelp
             </a>
-            <a className="rounded-full border border-slatecool/25 px-3 py-1 text-xs uppercase tracking-[0.1em]" href="#">
-              FB
+            <a
+              className="rounded-full border border-slatecool/25 px-3 py-1 text-xs uppercase tracking-[0.1em]"
+              href={BUSINESS.externalLinks.googleReviews}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google
             </a>
-            <a className="rounded-full border border-slatecool/25 px-3 py-1 text-xs uppercase tracking-[0.1em]" href="#">
-              TT
+            <a
+              className="rounded-full border border-slatecool/25 px-3 py-1 text-xs uppercase tracking-[0.1em]"
+              href={BUSINESS.externalLinks.booksy}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Booksy
             </a>
           </div>
         </div>

@@ -8,11 +8,7 @@ import CTAButton from "@/components/CTAButton";
 import { BUSINESS, NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
-type HeaderProps = {
-  onBookClick: () => void;
-};
-
-export default function Header({ onBookClick }: HeaderProps) {
+export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -42,7 +38,7 @@ export default function Header({ onBookClick }: HeaderProps) {
           <a href={BUSINESS.phoneHref} className="rounded-full border border-slatecool/40 p-2" aria-label="Call now">
             <PhoneIcon />
           </a>
-          <CTAButton onClick={onBookClick}>Book Your Chair</CTAButton>
+          <CTAButton onClick={() => (window.location.href = BUSINESS.externalLinks.booksy)}>Book Your Chair</CTAButton>
         </div>
 
         <button
@@ -81,7 +77,7 @@ export default function Header({ onBookClick }: HeaderProps) {
                 type="button"
                 onClick={() => {
                   setOpen(false);
-                  onBookClick();
+                  window.location.href = BUSINESS.externalLinks.booksy;
                 }}
                 className="rounded-full bg-bronze px-4 py-2 text-sm font-semibold uppercase tracking-[0.1em] text-white"
               >

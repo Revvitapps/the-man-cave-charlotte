@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 import Section from "@/components/Section";
+import { BUSINESS } from "@/lib/constants";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
@@ -63,7 +64,7 @@ export default function AboutPage() {
         <div className="rounded-xl border border-bronze/35 bg-bronze/10 p-6 text-center">
           <h2 className="font-heading text-4xl uppercase">Experience The Man Cave</h2>
           <div className="mt-4 flex justify-center">
-            <CTAButton href="/contact">Book Your Chair</CTAButton>
+            <CTAButton href={BUSINESS.externalLinks.booksy}>Book Your Chair</CTAButton>
           </div>
         </div>
       </Section>

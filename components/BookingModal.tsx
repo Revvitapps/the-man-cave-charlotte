@@ -53,6 +53,14 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
               >
                 {BUSINESS.phoneDisplay}
               </a>
+              <a
+                href={BUSINESS.externalLinks.booksy}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block rounded-full border border-bronze/50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-bronze hover:bg-bronze hover:text-white"
+              >
+                Book on Booksy
+              </a>
             </div>
 
             <LeadForm onSuccess={onClose} />
